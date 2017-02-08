@@ -1,0 +1,131 @@
+Last login: Wed Feb  8 11:37:11 on ttys000
+students-iMac:~ student$ cd projects/
+-bash: cd: projects/: No such file or directory
+students-iMac:~ student$ cd ~
+students-iMac:~ student$ mkdir projects
+students-iMac:~ student$ cd projects/
+students-iMac:projects student$ git clone https://github.com/OlgaGuseva1991/myapp.git
+Cloning into 'myapp'...
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+students-iMac:projects student$ cd myapp/
+students-iMac:myapp student$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+students-iMac:myapp student$ git checkout -b develop
+Switched to a new branch 'develop'
+students-iMac:myapp student$ git status
+On branch develop
+nothing to commit, working tree clean
+students-iMac:myapp student$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg> --save` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+name: (myapp) 
+version: (1.0.0) 0.0.0
+description: My App
+entry point: (index.js) myapp.js
+test command: 
+git repository: (https://github.com/OlgaGuseva1991/myapp.git) 
+keywords: 
+author: Olga Guseva
+license: (ISC) 
+About to write to /Users/student/projects/myapp/package.json:
+
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "description": "My App",
+  "main": "myapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlgaGuseva1991/myapp.git"
+  },
+  "author": "Olga Guseva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlgaGuseva1991/myapp/issues"
+  },
+  "homepage": "https://github.com/OlgaGuseva1991/myapp#readme"
+}
+
+
+Is this ok? (yes) 
+students-iMac:myapp student$ ls
+LICENSE		README.md	package.json
+students-iMac:myapp student$ ls
+LICENSE		README.md	package.json
+students-iMac:myapp student$ npm install -- save-dev react
+myapp@0.0.0 /Users/student/projects/myapp
+├─┬ react@15.4.2 
+│ ├─┬ fbjs@0.8.9 
+│ │ ├── core-js@1.2.7 
+│ │ ├─┬ isomorphic-fetch@2.2.1 
+│ │ │ ├─┬ node-fetch@1.6.3 
+│ │ │ │ ├─┬ encoding@0.1.12 
+│ │ │ │ │ └── iconv-lite@0.4.15 
+│ │ │ │ └── is-stream@1.1.0 
+│ │ │ └── whatwg-fetch@2.0.2 
+│ │ ├─┬ promise@7.1.1 
+│ │ │ └── asap@2.0.5 
+│ │ ├── setimmediate@1.0.5 
+│ │ └── ua-parser-js@0.7.12 
+│ ├─┬ loose-envify@1.3.1 
+│ │ └── js-tokens@3.0.1 
+│ └── object-assign@4.1.1 
+└── save-dev@2.0.0 
+
+students-iMac:myapp student$ git status
+On branch develop
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.editorconfig
+	node_modules/
+	package.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+students-iMac:myapp student$ git status
+On branch develop
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.editorconfig
+	.gitignore
+	package.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+students-iMac:myapp student$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+Did you mean this?
+	add
+students-iMac:myapp student$ git add .
+students-iMac:myapp student$ git commit -m 'adding package'
+[develop c11a290] adding package
+ 3 files changed, 24 insertions(+)
+ create mode 100644 .editorconfig
+ create mode 100644 .gitignore
+ create mode 100644 package.json
+students-iMac:myapp student$ git push origin develop
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 684 bytes | 0 bytes/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/OlgaGuseva1991/myapp.git
+ * [new branch]      develop -> develop
+students-iMac:myapp student$ 
