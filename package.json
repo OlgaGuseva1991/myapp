@@ -1,0 +1,19 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "description": "My App",
+  "main": "myapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlgaGuseva1991/myapp.git"
+  },
+  "author": "Olga Guseva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlgaGuseva1991/myapp/issues"
+  },
+  "homepage": "https://github.com/OlgaGuseva1991/myapp#readme"
+}
