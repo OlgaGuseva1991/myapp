@@ -24,7 +24,9 @@ students-iMac:myapp student$
 
 
 
-students-iMac:myapp student$ npm run dev              http://localhost:8080/
+students-iMac:myapp student$ npm run install
+                             npm run build
+                             npm run dev              http://localhost:8080/
 
 
 ctrl+C =>  
