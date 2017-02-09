@@ -1,3 +1,36 @@
+students-iMac:myapp student$ git status
+On branch develop
+nothing to commit, working tree clean
+students-iMac:myapp student$ git checkout -b develop
+fatal: A branch named 'develop' already exists.
+students-iMac:myapp student$ git status
+On branch develop
+nothing to commit, working tree clean
+students-iMac:myapp student$ git add .
+students-iMac:myapp student$ git commit -m 'adding package'
+On branch develop
+nothing to commit, working tree clean
+students-iMac:myapp student$ git push origin develop
+Counting objects: 31, done.
+Delta compression using up to 4 threads.
+
+Compressing objects: 100% (30/30), done.
+Writing objects: 100% (31/31), 3.62 MiB | 14.00 KiB/s, done.
+Total 31 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 1 local objects.
+To https://github.com/OlgaGuseva1991/myapp.git
+   ff3d0ae..c1401be  develop -> develop
+students-iMac:myapp student$
+
+
+
+ctrl+C =>  
+students-iMac:myapp student$
+
+
+
+
+
 Last login: Wed Feb  8 11:37:11 on ttys000
 students-iMac:~ student$ cd projects/
 -bash: cd: projects/: No such file or directory
