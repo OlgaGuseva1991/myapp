@@ -128,4 +128,7 @@ Writing objects: 100% (5/5), 684 bytes | 0 bytes/s, done.
 Total 5 (delta 0), reused 0 (delta 0)
 To https://github.com/OlgaGuseva1991/myapp.git
  * [new branch]      develop -> develop
-students-iMac:myapp student$ 
+students-iMac:myapp student$ npm run dev              http://localhost:8080/
+
+ctrl+C =>  
+students-iMac:myapp student$
