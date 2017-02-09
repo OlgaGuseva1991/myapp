@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import Picogram from './main';
+import ReactDOM from 'react-dom';
+import Picogram from './picogram';
 
-ReactDom.render(<Picogram />, document.getElementById('picogram'));
+ReactDOM.render(<Picogram />, document.getElementById('picogram'));
